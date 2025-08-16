@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="fr" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Concepteur Développeur d'Applications</title>
+    <meta name="description" content="Portfolio minimaliste d'un Concepteur Développeur d'Applications. Projets, compétences, contact." />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:title" content="Portfolio — Concepteur Développeur d'Applications" />
+    <meta property="og:description" content="Projets, compétences et contact." />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#accueil" aria-label="Accueil">
+          <span class="brand-text">Rémy Marquentin Dardouillet</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navigation principale">
+          <button id="menuToggle" class="icon-button menu-button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+            <span class="icon" aria-hidden="true">☰</span>
+          </button>
+
+          <ul id="menu" class="nav-list">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#formations">Formations</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button id="themeToggle" class="button secondary small theme-toggle" aria-pressed="false" aria-label="Basculer le thème">
+          <span class="theme-icon sun">☀️</span>
+          <span class="theme-icon moon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section id="accueil" class="section hero">
+        <div class="container grid-2">
+          <div class="hero-text">
+            <h1>Bonjour, je suis <span class="accent">Rémy Marquentin Dardouillet</span>.</h1>
+            <p class="subtitle">Concepteur Développeur d'Application. Passionné par l'informatique depuis toujours, après ma formation CDA je recherche un CDD ou un CDI.</p>
+            
+            <div class="socials">
+              <a href="#" aria-label="GitHub">GitHub</a>
+              <span aria-hidden="true">·</span>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <span aria-hidden="true">·</span>
+              <a href="mailto:remymarquentin@gmail.com" aria-label="Email">Email</a>
+            </div>
+
+            <div class="chips" style="margin-top:1rem">
+              <span>Autonome</span>
+              <span>Curieux</span>
+              <span>Persévérant</span>
+              <span>Collaboratif</span>
+            </div>
+
+            <div class="actions" style="margin-top:1rem">
+              <a class="button" href="assets/CV Rémy Marquentin.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img src="assets/PhotoProfile..JPG" alt="Portrait ou avatar" />
+          </div>
+        </div>
+      </section>
+
+      <section id="formations" class="section muted">
+        <div class="container">
+          <h2>Formations</h2>
+          <div class="skills-grid">
+            <article class="card">
+              <h3>Concepteur Développeur d'Application</h3>
+              <p>Formation en continu avec stage de 3 mois chez Neolink (Blois). Développement d'applications web et mobiles, architecture logicielle, gestion de projet.</p>
+              <div class="tags">
+                <span>2024-2025</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Formation développement web Symfony</h3>
+              <p>Formation intensive sur le framework Symfony avec stage de 4 mois chez Waalbz (Orléans). Développement d'applications web modernes et performantes.</p>
+              <div class="tags">
+                <span>2021</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>BTS SIO SLAM</h3>
+              <p>Formation en développement d'applications avec stage de 6 semaines chez CCL Label (Vineuil). Développement d'applications Android et web.</p>
+              <div class="tags">
+                <span>2019-2020</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>BAC STI2D SIN</h3>
+              <p>Baccalauréat Sciences et Technologies de l'Industrie et du Développement Durable, spécialité Systèmes d'Information et Numérique.</p>
+              <div class="tags">
+                <span>2017-2018</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiences" class="section">
+        <div class="container">
+          <h2>Expériences</h2>
+          <div class="projects-grid">
+            <article class="card">
+              <h3>2025 · Développeur — Neolink (Blois)</h3>
+              <ul>
+                <li>Stage 3 mois.</li>
+                <li>Analyse, maquettage et développement d’une page — PHP et jQuery.</li>
+                <li>Découverte des tests automatisés avec Playwright.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>2022 · Développeur Full Stack — Waalbz (Orléans)</h3>
+              <ul>
+                <li>Stage 4 mois.</li>
+                <li>Templating WordPress avec Elementor (PHP, CSS, JS).</li>
+                <li>Participation à un projet en Symfony.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>2020 · Développeur Android — CCL Label (Vineuil)</h3>
+              <ul>
+                <li>Stage 6 semaines.</li>
+                <li>Développement d’une application Android sous Android Studio.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>2019 · Testeur WordPress — TubConcept (Romorantin)</h3>
+              <ul>
+                <li>Stage 5 semaines.</li>
+                <li>Création d’un site vitrine avec le CMS WordPress.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="competences" class="section muted">
+        <div class="container">
+          <h2>Compétences</h2>
+          <div class="skills-grid">
+            <article class="card">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML5, CSS3</li>
+                <li>JavaScript, jQuery</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Backend</h3>
+              <ul>
+                <li>PHP</li>
+                <li>Symfony</li>
+                <li>Python</li>
+                <li>WordPress</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Mobile</h3>
+              <ul>
+                <li>Android Studio</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Tests & Outils</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>Merise (MCD/MLD/…)</li>
+                <li>Playwright</li>
+                <li>Word</li>
+                <li>Figma</li>
+                <li>Excel</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Base de données</h3>
+              <ul>
+                <li>MySQL/MariaDB</li>
+                <li>SQLite</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>En cours d'apprentissage</h3>
+              <ul>
+                <li>React</li>
+                <li>NodeJS</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Langues</h3>
+              <ul>
+                <li>Français (natif)</li>
+                <li>Anglais technique</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projets" class="section">
+        <div class="container">
+          <h2>Projets</h2>
+          <div class="skills-grid">
+            <article class="card">
+              <h3>Amélioration Performance d'une Page</h3>
+              <p>Optimisation des performances d'une page web existante avec refactoring du code, amélioration de l'UX/UI et mise en place de bonnes pratiques de développement.</p>
+              <div class="tags">
+                <span>PHP</span><span>jQuery</span><span>Figma</span><span>HTML</span><span>CSS</span><span>Git</span><span>Azure DevOps</span>
+              </div>
+              <div class="project-actions">
+                <a class="button small" href="assets/Dossier Projet CDA 2025.pdf" target="_blank" rel="noopener">Dossier Projet</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Spam Classifier</h3>
+              <p>Classification automatique de messages spam/legitimes utilisant des algorithmes de machine learning et traitement du langage naturel.</p>
+              <div class="tags">
+                <span>Python</span>
+              </div>
+              <div class="project-actions">
+                <a class="button small" href="https://github.com/CCI-CDA/Spam-Classifier-Remy" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Game Horizon</h3>
+              <p>Plateforme de jeux web avec système d'authentification, gestion des scores et interface utilisateur moderne et responsive.</p>
+              <div class="tags">
+                <span>PHP</span><span>Docker</span><span>MySQL</span><span>Bootstrap</span>
+              </div>
+              <div class="project-actions">
+                <a class="button small" href="#" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Groovie</h3>
+              <p>Application web moderne développée avec le framework Laravel, conteneurisée avec Docker pour une déploiement simplifié et scalable.</p>
+              <div class="tags">
+                <span>Laravel</span><span>Docker</span><span>PHP</span><span>MySQL</span><span>Blade</span>
+              </div>
+              <div class="project-actions">
+                <a class="button small" href="#" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section muted">
+        <div class="container grid-2 contact-grid">
+          <div>
+            <h2>Contact</h2>
+            <p>Une opportunité, une question ou l'envie d'échanger ? Écrivez‑moi, je réponds rapidement.</p>
+            <ul class="contact-details">
+              <li><strong>Adresse</strong>: Mur‑de‑Sologne, 41230</li>
+              <li><strong>Email</strong>: <a href="mailto:remymarquentin@gmail.com">remymarquentin@gmail.com</a></li>
+              <li><strong>Téléphone</strong>: <a href="tel:+33689626980">06 89 62 69 80</a></li>
+              <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/rémy-marquentin-dardouillet-a29470211">Rémy Marquentin Dardouillet</a></li>
+              <li><strong>Permis</strong>: Permis B et véhicule</li>
+            </ul>
+          </div>
+          <form id="contactForm" class="card" action="https://formspree.io/f/xxxxxxxx" method="POST">
+            <label>
+              <span>Nom</span>
+              <input name="name" type="text" placeholder="Votre nom" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" placeholder="vous@exemple.com" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+            </label>
+            <button class="button primary" type="submit">Envoyer</button>
+            <p id="formStatus" role="status" aria-live="polite" class="form-status" hidden></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Rémy Marquentin Dardouillet. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top-btn" aria-label="Retour en haut de page">
+      ↑
+    </button>
+
+    <script src="scripts/main.js" defer></script>
+  </body>
+  </html>
+
+
