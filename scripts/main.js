@@ -7,6 +7,11 @@
   const contactForm = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
   const backToTopButton = document.getElementById('backToTop');
+  const sectionIds = ['accueil','formations','experiences','competences','projets','contact'];
+  const sections = sectionIds
+    .map(id => document.getElementById(id))
+    .filter(Boolean);
+  const navLinks = Array.from(document.querySelectorAll('.nav-list a'));
 
   // Year
   if (yearSpan) yearSpan.textContent = String(new Date().getFullYear());
@@ -32,6 +37,17 @@
   }
 
   themeToggleButton?.addEventListener('click', toggleTheme);
+
+  // Calcul dynamique de la hauteur du header pour gérer le décalage du contenu
+  const header = document.querySelector('.site-header');
+  function setHeaderOffsetCSSVar() {
+    const headerHeight = header instanceof HTMLElement ? header.offsetHeight : 60;
+    document.documentElement.style.setProperty('--header-h', headerHeight + 'px');
+    document.body.style.paddingTop = headerHeight + 'px';
+  }
+  window.addEventListener('load', setHeaderOffsetCSSVar);
+  window.addEventListener('resize', setHeaderOffsetCSSVar);
+  setHeaderOffsetCSSVar();
 
   // Mobile menu
   function toggleMenu() {
@@ -91,6 +107,39 @@
   
   // Cliquer sur le bouton pour remonter en haut
   backToTopButton?.addEventListener('click', scrollToTop);
+
+  // -------- Scrollspy (menu suit la section visible) --------
+  function updateActiveLink() {
+    let activeId = null;
+    const offset = 120; // marge pour tenir compte du header
+
+    for (const section of sections) {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= offset && rect.bottom > offset) {
+        activeId = section.id;
+        break;
+      }
+    }
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href') || '';
+      const id = href.startsWith('#') ? href.slice(1) : null;
+      if (id && id === activeId) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  // Défilement & chargement initial
+  window.addEventListener('scroll', () => {
+    toggleBackToTopButton();
+    updateActiveLink();
+  });
+  window.addEventListener('resize', updateActiveLink);
+  document.addEventListener('DOMContentLoaded', updateActiveLink);
+  updateActiveLink();
 })();
 
 
